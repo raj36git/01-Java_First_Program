@@ -1,0 +1,16 @@
+package com.rk.Java_Basics.Condition;
+//Q22:Subtract the Product and Sum of Digits of an Integer
+public class Subtract22 {
+    public static void main(String[] args) {
+        int num = 45;
+        int product = 1;
+        int sum = 0;
+        while (num>0){
+            int rem = num % 10;
+            product = product * rem;
+            sum = sum + rem;
+                    num = num / 10;
+        }
+        System.out.println(product - sum);
+    }
+}
